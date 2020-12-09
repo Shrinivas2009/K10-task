@@ -1,0 +1,293 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 100%;
+}
+.task-header{
+  padding: 30px 35px;
+  overflow: hidden;
+}
+.task-logo-section{
+  width: 135px;
+  float: left;
+}
+img{
+  width:100%;
+  height: 100%;
+}
+.task-help{
+  width: auto;
+  float: right;
+}
+.task-help a{
+  text-decoration: none;
+}
+.task-section{
+  background-image: url("images/yahoo-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  height: 1000px;
+}
+.task-section-container{
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+
+.task-sign-in-container{
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #26282a;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
+  width: 360px;
+  right: 0;
+  min-height: 550px;
+  z-index: 1;
+  padding: 28px;
+  padding-bottom: 10px;
+  border: 1px solid transparent;
+  border-top: 1px solid #f1f1f5;
+}
+.task-sign-box{
+  position: absolute;
+  top: 11px;
+}
+.task-section-logo{
+  width: 100px;
+  margin: 0 auto;
+}
+.task-section-signin-text{
+  padding: 20px 0;
+
+}
+.task-section-signin-text h2{
+  display: block;
+  margin: 0;
+  margin-top: .82353rem;
+  font-size: 1.17647rem;
+  font-weight: 600;
+  letter-spacing: -.2px;
+  text-align: center;
+  line-height: 1.35294rem;
+  font-family: Yahoo Sans,Helvetica Neue,Helvetica,Arial;
+}
+.task-section-signin-text p{
+  text-align: center;
+  font-weight: 600;
+  font-family: Yahoo Sans,Helvetica Neue,Helvetica,Arial;
+}
+
+.task-input-section {
+  position: relative;
+  line-height: 14px;
+  display: block;
+  width: 100%;
+  margin: 30px auto 0;
+}
+label {
+  color: #999;
+  font-size: .82353rem;
+  letter-spacing: -.1px;
+  font-weight: 400;
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  top: .70588rem;
+  /* transition: .2s ease all; */
+  margin-top: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  z-index: 2;
+  left: 10px;
+  top: 14px;
+  padding: 0 2px;
+  background: #fff;
+  -webkit-transition: -webkit-transform 100ms ease;
+  -moz-transition: -moz-transform 100ms ease;
+  -o-transition: -o-transform 100ms ease;
+  -ms-transition: -ms-transform 100ms ease;
+  transition: transform 100ms ease;
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  transform: translateY(-20px);
+  font-family: Yahoo Sans,Helvetica Neue,Helvetica,Arial;
+}
+input {
+  font-size: 16px;
+  color: #555;
+  outline: none;
+  border: none;
+  padding: 10px 0px;
+  border-radius: 0;
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  display: block;
+  border-bottom: 1px solid #ddd;
+  font-family: Yahoo Sans,Helvetica Neue,Helvetica,Arial;
+}
+input:invalid + label {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -o-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+input:focus {
+  border-color: #2b96f1;
+}
+input:focus + label {
+  color: #2b96f1;
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+.task-username-button{
+  width: 100%;
+  border-radius: 20px;
+  font-size: .94118rem;
+  font-weight: 600;
+  height: 2.35294rem;
+  padding: .64706rem 0;
+  line-height: 1rem;
+  color: #fff;
+  background: #188fff;
+  border: 1px solid #188fff;
+  font-family: Yahoo Sans,Helvetica Neue,Helvetica,Arial;
+  margin-top: 20px;
+}
+
+.task-username-button:active,  
+.task-username-button:focus {
+  background: #003abc;
+  border-color: #003abc;
+  color: #fff;
+  outline: none;
+}
+.task-checkbox-container{
+  width: 100%;
+  margin-top:20px;
+}
+.task-checkbox-container a{
+  color: #188fff;
+  font-size: .82353rem;
+  text-decoration: none;
+  font-family: Yahoo Sans,Helvetica Neue,Helvetica,Arial;
+}
+
+input[type=checkbox] {
+  position: relative;
+  cursor: pointer;
+}
+input[type=checkbox]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 0;
+  left: 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: white;
+}
+input[type=checkbox]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 1px;
+  left: 5px;
+}
+
+.task-checkbox{
+  width: auto;
+  margin: inherit;
+  float: left;
+  color: #188fff;
+}
+.task-forget-username{
+  width: auto;
+  float: right;
+}
+.task-sign-up-container{
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-bottom: 1.41176rem;
+  text-align: center;
+  padding: 0 1.41176rem;
+}
+.task-sign-up a{
+  font-size: .94118rem;
+  font-weight: 500;
+  padding: .64706rem 0;
+  color: #fff;
+  background: #188fff;
+  border: 1px solid #188fff;
+  width: 100%;
+  display: block;
+  text-align: center;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.task-sign-up-google a{
+  font-size: .94118rem;
+  font-weight: 500;
+  padding: .64706rem 0;
+  color: #188fff;
+  background: transparent;
+  border: 1px solid #188fff;
+  width: 100%;
+  display: block;
+  text-align: center;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.task-continue{
+  font-size: .94118rem;
+  font-weight: 500;
+  padding: .64706rem 0;
+  width: 100%;
+  display: block;
+  text-align: center;
+  border-radius: 20px;
+  text-decoration: none;
+}
+@media (min-width:320px) and (max-width: 480px){
+  .task-header{
+    display:none;
+  }
+  .task-section-container{
+    width: 100%;
+  }
+  .task-sign-in-container{
+    width: 100%;
+    min-height: 100%;
+  }
+  .task-section{
+    height: 600px;
+  }
+  .task-sign-box{
+    top: 0px;
+  }
+}
